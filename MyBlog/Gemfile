@@ -36,19 +36,26 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-group :assets do
-  gem "therubyracer", :require => 'v8'
-  gem "less-rails"
-end
+#group :assets do
+  #gem "therubyracer", :require => 'v8'
+  #gem "less-rails"
+#end
 
-#gem "therubyracer", :require => 'v8'
-#gem "less-rails"
+gem "therubyracer", :require => 'v8'
+gem "less-rails"
 
 #bootstrap
 gem "twitter-bootstrap-rails"
 
 #user
 #gem 'moode_user_plugin', :git => 'git@github.com:lishoubo/moode_user_plugin.git'
+
+#User
+#gem 'devise'
+#gem 'devise', '3.0.0.rc'
+gem 'devise', :git => "git://github.com/plataformatec/devise.git"
+gem 'devise-encryptable'
+gem 'protected_attributes'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
